@@ -7,10 +7,7 @@ We built a close-quarters security system for small spaces (e.g. desks, dorm roo
 * [Wesley Penn](https://www.linkedin.com/in/wesley-penn) SEAS ‘22
 * [Jeremy Kogan](https://www.linkedin.com/in/jeremy-kogan) SEAS ‘24
 
-## Easter Egg
-There exists an easter egg in our system. If you guess the correct password and press the up arrow, the Mario theme song will play and you will see the names of our founders on the LCD. 
-
-## Parts List
+### Parts List
 * Arduino Uno
 * Adafruit Bluefruit LE Module
 * Liquid Crystal Display (LCD)
@@ -22,6 +19,9 @@ There exists an easter egg in our system. If you guess the correct password and 
 * LEDs (2x, Blue and Green)
 * Wires
 * Breadboard
+
+## Easter Egg
+There exists an easter egg in our system. If you guess the correct password and press the up arrow, the Mario theme song will play and you will see the names of our founders on the LCD. 
 
 ## Design Process & Iterations
 We knew from the start that the Bluetooth component would be difficult, finicky, and slow-moving to develop with, so we decided to add that component last. We started with a PIR Motion Sensor, but found that in a couple of painstaking hours that it was very difficult to use. We decided to alternatively use an Ultrasonic sensor to detect distance and assume the setup would be static in closed quarters for success. Once we got that working, we created logic to coordinate the states of the alarm system - disarmed, armed, triggered. We got the Ultrasonic to switch the state from armed to triggered. Then, we added LED actuators to represent the three states, and added the Bluetooth module to control the states. Lastly, as a stretch goal, we added an LCD to show the states, and added a password management system to finish off the project.
